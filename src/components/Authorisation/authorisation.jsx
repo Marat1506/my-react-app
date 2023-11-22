@@ -7,7 +7,7 @@ const Authorisation = () => {
   const [open, setOpen] = useState(true);
 
   const handleClose = () => {
-    setOpen(false);
+    setOpen(false); 
   };
   return (
     <Box sx={{display: 'flex', flexDirection: 'column'}}>

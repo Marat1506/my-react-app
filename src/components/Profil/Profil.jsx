@@ -1,12 +1,12 @@
 import { Box, FormControl, Input, InputAdornment, InputLabel, TextField, Typography } from "@mui/material";
 import { AccountCircle,  LocationOn } from '@mui/icons-material';
-
+import afisha from './afisha.png'
 export default function Profil() {
   return (
-    <Box id="profil" sx={{width: '350px', display: 'flex', flexDirection: 'column', textAlign: 'center', marginLeft: '10px', marginTop: '-120px'}}>
+    <Box id="profil" sx={{width: '350px', display: 'flex', flexDirection: 'column', textAlign: 'center', marginLeft: '10px', marginTop: '-70px'}}>
       <Box>
-      <img width="80" height="80" src="https://img.icons8.com/ios/50/swiftui.png" alt="swiftui" />
-      <Typography sx={{fontSize: '30px'}}>Личный кабинет</Typography>
+      <img width="280" height="280" src={afisha} alt="swiftui" />
+      <Typography sx={{fontSize: '30px', marginTop: '-50px'}}>Личный кабинет</Typography>
       <AccountCircle fontSize="large" sx={{fontSize: '130px', marginTop: '40px'}}/>
       </Box>
       <Box sx={{display: 'flex', flexDirection: 'column', gap: '20px'}}>

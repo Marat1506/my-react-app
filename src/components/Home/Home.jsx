@@ -1,12 +1,13 @@
 import { Box, Typography } from "@mui/material";
 import { MoodBad, SentimentDissatisfied, SentimentSatisfied, SentimentVerySatisfied, Mood } from '@mui/icons-material';
 import { EmojiObjects, PlaylistAdd, LibraryBooks, HelpOutline } from '@mui/icons-material';
+import afisha from './afisha.png'
 export default function Home() {
     return (
-        <Box id="home" sx={{display: 'flex', flexDirection: 'column', marginTop: '-100px', alignItems: 'center', textAlign: 'center' }}>
-            <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                <img width="80" height="80" src="https://img.icons8.com/ios/50/swiftui.png" alt="swiftui" />
-                <Typography sx={{ fontSize: '30px' }}>Привет</Typography>
+        <Box id="home" sx={{display: 'flex', flexDirection: 'column', marginTop: '-70px', alignItems: 'center', textAlign: 'center' }}>
+            <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>            
+                <img src={afisha} alt="" width="280" height="280"/>
+                <Typography sx={{ fontSize: '30px', marginTop: '-40px' }}>Привет</Typography>
                 <Typography sx={{ fontSize: '30px', marginLeft: '10px' }}>Как ты себя чувствуешь?</Typography>
             </Box>
 

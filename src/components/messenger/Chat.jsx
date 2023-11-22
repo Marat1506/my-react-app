@@ -1,14 +1,13 @@
 import { Box, FormControl, Input, InputAdornment, InputLabel, Typography } from "@mui/material";
 import { Search } from "@mui/icons-material";
-
-
+import afisha from './afisha.png'
 export default function Chat() {
     return (
         <Box sx={{width: '380px'}}>
-            <Box sx={{display: 'flex', justifyContent: 'space-between', marginTop: '-100px', alignItems: 'center'}}>
+            <Box sx={{display: 'flex', justifyContent: 'space-between', marginTop: '-40px', alignItems: 'center'}}>
                 <Typography sx={{color: 'aqua'}}>Чаты</Typography>
                 <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-                    <img width="50" height="50" src="https://img.icons8.com/ios/50/swiftui.png" alt="swiftui" />
+                <img src={afisha} alt="" width="180" height="180"/>
                     <Typography>Клубы по интересам</Typography>
                 </Box>
                 <Typography sx={{fontSize: '50px', color: 'aqua'}}>+</Typography>

@@ -1,12 +1,13 @@
 import { Box, Typography } from "@mui/material";
 import { AccountCircle, AccessAlarm, Favorite, Chat } from '@mui/icons-material';
+import afisha from './afisha.png'
 
 export default function Task() {
     return (
         <Box sx={{ width: '380px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <Box sx={{ marginTop: '-100px' }}>
-                <img width="80" height="80" src="https://img.icons8.com/ios/50/swiftui.png" alt="swiftui" />
-                <Typography sx={{ marginLeft: '15px' }}>Афиша</Typography>
+            <img src={afisha} alt="" width="280" height="280"/>
+                <Typography sx={{ marginLeft: '15px', marginTop: '-60px' }}>Афиша</Typography>
             </Box>
             <Box sx={{ marginTop: '40px', width: '350px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <Box sx={{ borderBottom: "1px solid black" }}>

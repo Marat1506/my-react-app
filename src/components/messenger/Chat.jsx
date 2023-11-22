@@ -1,0 +1,70 @@
+import { Box, FormControl, Input, InputAdornment, InputLabel, Typography } from "@mui/material";
+import { Search } from "@mui/icons-material";
+
+
+export default function Chat() {
+    return (
+        <Box sx={{width: '380px'}}>
+            <Box sx={{display: 'flex', justifyContent: 'space-between', marginTop: '-100px', alignItems: 'center'}}>
+                <Typography sx={{color: 'aqua'}}>Чаты</Typography>
+                <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                    <img width="50" height="50" src="https://img.icons8.com/ios/50/swiftui.png" alt="swiftui" />
+                    <Typography>Клубы по интересам</Typography>
+                </Box>
+                <Typography sx={{fontSize: '50px', color: 'aqua'}}>+</Typography>
+            </Box>
+
+            <FormControl fullWidth  variant="outlined">
+                <InputLabel htmlFor="input-with-icon-adornment">
+                    Поиск чата
+                </InputLabel>
+                <Input
+                    id="input-with-icon-adornment"
+                    endAdornment={
+                        <InputAdornment position="start">
+                            <Search fontSize="large" />
+                        </InputAdornment>
+                    }
+                />
+            </FormControl>
+
+            <Box sx={{marginTop: '30px'}}>
+                <Box sx={{ borderBottom: "1px solid black", marginTop: '10px' }}>
+                    <Typography sx={{fontSize: '30px'}}>Литература</Typography>
+                </Box>
+                <Box sx={{ borderBottom: "1px solid black", marginTop: '10px' }}>
+                    <Typography sx={{fontSize: '30px'}}>Фильмы и сериалы</Typography>
+                </Box>
+                <Box sx={{ borderBottom: "1px solid black", marginTop: '10px' }}>
+                    <Typography sx={{fontSize: '30px'}}>Туризм</Typography>
+                </Box>
+                <Box sx={{ borderBottom: "1px solid black", marginTop: '10px' }}>
+                    <Typography sx={{fontSize: '30px'}}>Живопись</Typography>
+                </Box>
+                <Box sx={{ borderBottom: "1px solid black", marginTop: '10px' }}>
+                    <Typography sx={{fontSize: '30px'}}>Кулинария</Typography>
+                </Box>
+                <Box sx={{marginTop: '20px', backgroundColor: 'darkgray', height: '20px'}}>
+
+                </Box>
+                <Box sx={{ borderBottom: "1px solid black", marginTop: '10px' }}>
+                    <Typography sx={{fontSize: '30px'}}>Танцы</Typography>
+                </Box>
+                <Box sx={{ borderBottom: "1px solid black", marginTop: '10px' }}>
+                    <Typography sx={{fontSize: '30px'}}>Здоровое питание, спорт</Typography>
+                </Box>
+                <Box sx={{ borderBottom: "1px solid black", marginTop: '10px' }}>
+                    <Typography sx={{fontSize: '30px'}}>Рукоделие</Typography>
+                </Box>
+                <Box sx={{marginTop: '20px', backgroundColor: 'darkgray', height: '20px'}}>
+
+                </Box>
+                <Box sx={{ borderBottom: "1px solid black", marginTop: '10px' }}>
+                    <Typography sx={{fontSize: '30px'}}>Астрология</Typography>
+                </Box>
+
+            </Box>
+
+        </Box>
+    )
+}
